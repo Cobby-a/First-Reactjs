@@ -3,7 +3,7 @@ const Navbar = () =>{
     return(
         <nav>
             <h1>The Dojo Blog</h1>
-            <div>
+            <div className="links">
                 <a href="google.com">HomeNew Blog</a>
             </div>
         </nav>
