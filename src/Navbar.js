@@ -1,10 +1,11 @@
 
 const Navbar = () =>{
     return(
-        <nav>
+        <nav className="navbar">
             <h1>The Dojo Blog</h1>
             <div className="links">
-                <a href="google.com">HomeNew Blog</a>
+                <a href="/">Home</a>
+                <a href="/">New Blog</a>
             </div>
         </nav>
     )
