@@ -1,8 +1,8 @@
-/* @import url('b'); */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 *{
   margin: 0;
-  font-family: 'Segoe UI',"Quicksand";
+  font-family: 'Quicksand','Segoe UI';
   color: #333;
 }
 
