@@ -15,6 +15,9 @@ useEffect (()=>{
         .then(data =>{
             setBlogs(data)
             setIsPending(false)
+        })
+        .catch(err =>{
+            console.log(err.message)
         });
 },1000);
 },[])
