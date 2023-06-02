@@ -3,7 +3,7 @@
 const Create = ()=>{
     return(
         <div>
-            <h2>This is the Create page section</h2>
+            <h2>This is the Create blog section</h2>
         </div>
     )
 }
