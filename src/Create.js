@@ -2,8 +2,20 @@
 
 const Create = ()=>{
     return(
-        <div>
-            <h2>This is the Create blog section</h2>
+        <div className="create">
+            <h2>Add a New Blog</h2>
+            <form>
+                <label>Blog title:</label>
+                <input type="text" required />
+                <label>Blog body:</label>
+                <textarea required ></textarea>
+                <label>Blog author:</label>
+                <select>
+                    <option value="Cobby">Cobby</option>
+                    <option value="Yaa">Yaa</option>
+                </select>
+                <button>Add Blog</button>
+            </form>
         </div>
     )
 }
