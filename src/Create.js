@@ -1,11 +1,15 @@
 import { useState } from "react";
-
+// import {useHistory} from 'react-router-dom' -- updated to ....
+import { useNavigate } from "react-router-dom";
 
 const Create = ()=>{
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
-    const [isPending, setISPending] = useState(false)
+    const [isPending, setISPending] = useState(false);
+    const navigate = useNavigate();
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         setISPending(true)
@@ -17,6 +21,7 @@ const Create = ()=>{
         }).then(()=>{
             console.log('New Blog Added')
             setISPending(false);
+            navigate('/');
         })
     }
     return(
