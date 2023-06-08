@@ -8,7 +8,7 @@ const useFetch = (url) =>{
     useEffect (()=>{
         const abortCont = new AbortController();
 
-        setTimeout(()=>{fetch(url)
+        {fetch(url)
             fetch(url, {signal: abortCont.signal})
             .then(response =>{
                 if(!response.ok){
@@ -30,7 +30,7 @@ const useFetch = (url) =>{
                 setError(err.message);
                 }
             });
-    },1000);
+    };
     return () => abortCont.abort();
 
     },[url]);
